@@ -72,9 +72,22 @@
 	grid-column: 1;
 }
 
+/*article impaires : texte a droite*/
+.article:nth-of-type(odd) .text
+{
+	grid-column: 2/4;
+	background-color: purple;
+}
+
 /*article paires : image a droite*/
 .article:nth-of-type(even) .image
 {
 	background-color: red;
 	grid-column: 3;
+}
+
+/*article paires : texte a gauche*/
+.article:nth-of-type(even) .text
+{
+	grid-column: 1/ 3;
 }
