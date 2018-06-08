@@ -18,12 +18,18 @@
 	text-align: center;
 }
 
+/*le div pour mettre le logo d'aeromexico*/
+.aeromexico
+{
+	background-image: url("http://flotilla-aerea.com/wp-content/uploads/2012/05/aero-mexico-airlines-logo-design1.jpg");
+	background-repeat: no-repeat;
+}
+
 /*la deuxième grille*/
 .page
 {
 	grid-column: 2;
 	grid-row: 2;
-	background-color: red;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -47,7 +53,6 @@
 .article:nth-of-type(1)
 {
 	grid-row: 1;
-	background-color: green;
 }
 
 .article:nth-of-type(1) .image
@@ -60,12 +65,11 @@
 .article:nth-of-type(2)
 {
 	grid-row: 2;
-	background-color: lime;
 }
 
 .article:nth-of-type(2) .image
 {
-	
+	background-image: ;
 }
 
 /*troisieme article*/
@@ -73,12 +77,11 @@
 .article:nth-of-type(3)
 {
 	grid-row: 3;
-	background-color: green;
 }
 
 .article:nth-of-type(3) .image
 {
-	
+	background-image: ;
 }
 
 /*quatrieme article*/
@@ -86,18 +89,16 @@
 .article:nth-of-type(4)
 {
 	grid-row: 4;
-	background-color: lime;
 }
 
 .article:nth-of-type(4) .image
 {
-	
+	background-image: ;
 }
 
 /*articles impaires : image a gauche*/
 .article:nth-of-type(odd) .image
 {
-	background-color: yellow;
 	grid-column: 1;
 }
 
@@ -105,13 +106,11 @@
 .article:nth-of-type(odd) .text
 {
 	grid-column: 2/4;
-	background-color: purple;
 }
 
 /*article paires : image a droite*/
 .article:nth-of-type(even) .image
 {
-	background-color: red;
 	grid-column: 3;
 }
 
