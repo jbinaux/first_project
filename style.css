@@ -1,8 +1,80 @@
+
+/*la grille générale*/
+.main
+{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 9fr;
+}
+
 .title
 {
-	position: fixed;
 	background-color: blue;
 	color: white;
-	width: 100%;
+	grid-column: 1/ 4;
+	grid-row : 1;
 	text-align: center;
+}
+
+/*la deuxième grille*/
+.page
+{
+	grid-column: 2;
+	grid-row: 2;
+	background-color: red;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+/*la troisieme grille*/
+.article
+{
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	grid-template-rows: 1fr;
+}
+
+/*premier article*/
+.article:nth-of-type(1)
+{
+	grid-row: 1;
+	background-color: green;
+}
+
+/*deuxieme article*/
+.article:nth-of-type(2)
+{
+	grid-row: 2;
+	background-color: lime;
+}
+
+/*troisieme article*/
+.article:nth-of-type(3)
+{
+	grid-row: 3;
+	background-color: green;
+}
+
+/*quatrieme article*/
+.article:nth-of-type(4)
+{
+	grid-row: 4;
+	background-color: lime;
+}
+
+/*articles impaires : image a gauche*/
+.article:nth-of-type(odd) .image
+{
+	background-color: yellow;
+	grid-column: 1;
+}
+
+/*article paires : image a droite*/
+.article:nth-of-type(even) .image
+{
+	background-color: red;
+	grid-column: 3;
 }
