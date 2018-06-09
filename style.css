@@ -9,20 +9,50 @@
 	grid-template-rows: 1fr 9fr;
 }
 
+/*
+couleur a changer !!!!
+*/
+
 .title
 {
-	background-color: blue;
+	background-color: #D0142C;
 	color: white;
 	grid-column: 1/ 4;
-	grid-row : 1;
+	grid-row: 1;
 	text-align: center;
 }
 
 /*le div pour mettre le logo d'aeromexico*/
 .aeromexico
 {
+	grid-column: 1;
+	grid-row: 2;
 	background-image: url("http://flotilla-aerea.com/wp-content/uploads/2012/05/aero-mexico-airlines-logo-design1.jpg");
 	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	background-size: 100%;
+	background-color: #003263;
+}
+
+/*le div pour mettre le drapeau du mexique*/
+.mexique
+{
+	grid-column: 3;
+	grid-row: 2;
+	background-image: url(https://upload.wikimedia.org/wikipedia/en/2/20/Flag_of_Mexico_1917.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	background-size: 100%;
+}
+
+/*sert à créer le background aux couleurs du mexique*/
+.mexique2
+{
+	grid-column: 3;
+	grid-row: 2;
+	background: -moz-linear-gradient(left, #016648, #016648 33.33%,#FFFFFF 33.33%, #FFFFFF 66.66%, #D0142C 66.66%, #D0142C);
+	background: -webkit-linear-gradient(left, #016648, #016648 33.33%,#FFFFFF 33.33%, #FFFFFF 66.66%, #D0142C 66.66%, #D0142C);
+	z-index: -1;
 }
 
 /*la deuxième grille*/
@@ -45,7 +75,8 @@
 
 .text
 {
-	text-align: center;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 /*premier article*/
