@@ -35,7 +35,7 @@
 {
 	grid-column: 3;
 	grid-row: 2;
-	background-image: url(https://upload.wikimedia.org/wikipedia/en/2/20/Flag_of_Mexico_1917.png);
+	background-image: url("https://upload.wikimedia.org/wikipedia/en/2/20/Flag_of_Mexico_1917.png");
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
 	background-size: 100%;
@@ -60,7 +60,18 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
+	background-color: white;
 }
+
+@media (max-width : 1000px)
+{
+	.page
+	{
+		grid-column: 1/ 4;
+		
+	}
+}
+
 
 /*la troisieme grille*/
 .article
@@ -68,6 +79,25 @@
 	display: grid;
 	grid-template-columns: 2fr 1fr 2fr;
 	grid-template-rows: 1fr;
+}
+
+/*responsive !*/
+
+@media (max-width : 600px)
+{
+	.article
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.article .image
+	{
+		grid-row: 1;
+	}
+	.article .text
+	{
+		grid-row: 2;
+	}
 }
 
 .text
