@@ -18,6 +18,8 @@
 	text-align: center;
 }
 
+@media (min-width : 1000px)
+{
 /*le div pour mettre le logo d'aeromexico*/
 .aeromexico
 {
@@ -50,6 +52,7 @@
 	background: -moz-linear-gradient(left, #016648, #016648 33.33%,#FFFFFF 33.33%, #FFFFFF 66.66%, #D0142C 66.66%, #D0142C);
 	background: -webkit-linear-gradient(left, #016648, #016648 33.33%,#FFFFFF 33.33%, #FFFFFF 66.66%, #D0142C 66.66%, #D0142C);
 	z-index: -1;
+}
 }
 
 /*la deuxième grille*/
@@ -86,30 +89,34 @@
 {
 	.article
 	{
+		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-	.article .image
+	.image
 	{
 		grid-row: 1;
 	}
-	.article .text
+	.text
 	{
 		grid-row: 2;
 	}
 }
-/*
-.image {
-  width: 100%;
-  height: auto;
+
+.image 
+{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0% 50%;
 }
-*/
+
 .text
 {
-	border: solid white 5px;
+	/*border: solid white 5px;*/
 	text-align: justify;
 	text-justify: inter-word;
-	overflow: hidden;
+	align-self: center;
+	margin: 5px;
 }
 
 /*premier article*/
@@ -122,8 +129,6 @@
 .article:nth-of-type(1) .image
 {
 	background-image: url("https://image.ibb.co/ktzWso/Agua_Azul_small.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
 }
 
 /*deuxieme article*/
@@ -136,8 +141,6 @@
 .article:nth-of-type(2) .image
 {
 	background-image: url("https://image.ibb.co/iegKCo/Teotihuacan_small.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
 }
 
 /*troisieme article*/
@@ -150,8 +153,6 @@
 .article:nth-of-type(3) .image
 {
 	background-image: url("https://image.ibb.co/jvGKTT/Yaxchilan_small.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
 }
 
 /*quatrieme article*/
@@ -164,8 +165,6 @@
 .article:nth-of-type(4) .image
 {
 	background-image: url("https://image.ibb.co/jmQM8T/Palenque_small.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
 }
 
 /*articles impaires : image a gauche*/
@@ -189,5 +188,5 @@
 /*article paires : texte a gauche*/
 .article:nth-of-type(even) .text
 {
-	grid-column: 1/ 3;
+	grid-column: 1/3;
 }
