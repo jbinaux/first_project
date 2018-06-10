@@ -1,3 +1,3 @@
 # first_project
 
-this is a project by two we do for our first week 
+this is a group project for school's first week
