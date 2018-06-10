@@ -68,7 +68,6 @@
 	.page
 	{
 		grid-column: 1/ 4;
-		
 	}
 }
 
@@ -99,17 +98,18 @@
 		grid-row: 2;
 	}
 }
-
+/*
 .image {
   width: 100%;
   height: auto;
 }
-
+*/
 .text
 {
 	border: solid white 5px;
 	text-align: justify;
 	text-justify: inter-word;
+	overflow: hidden;
 }
 
 /*premier article*/
@@ -121,7 +121,9 @@
 
 .article:nth-of-type(1) .image
 {
-	background-image: ;
+	background-image: url("https://image.ibb.co/ktzWso/Agua_Azul_small.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 /*deuxieme article*/
@@ -133,7 +135,9 @@
 
 .article:nth-of-type(2) .image
 {
-	background-image: ;
+	background-image: url("https://image.ibb.co/iegKCo/Teotihuacan_small.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 /*troisieme article*/
@@ -145,7 +149,9 @@
 
 .article:nth-of-type(3) .image
 {
-	background-image: ;
+	background-image: url("https://image.ibb.co/jvGKTT/Yaxchilan_small.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 /*quatrieme article*/
@@ -157,7 +163,9 @@
 
 .article:nth-of-type(4) .image
 {
-	background-image: ;
+	background-image: url("https://image.ibb.co/jmQM8T/Palenque_small.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 /*articles impaires : image a gauche*/
